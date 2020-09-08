@@ -92,3 +92,6 @@ img.avatar{
   width: 65%;
   background-color: #fff;
 }
+.main-right{
+  height: calc(100% - 120px);
+}
