@@ -4,16 +4,55 @@
     <meta charset="utf-8">
     <title>whatsapp web</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   </head>
   <body>
+    <div class="whatsapp-container">
+      <!-- nav bar di sinistra -->
+
+      <nav class="left-nav">
+        <div class="header-nav">
+          <div class="account-img">
+            <img class="avatar" src="img/avatar_io.jpg" alt="foto profilo">
+          </div>
+          <div class="simble-container">
+            <ul class="simble-list">
+              <li><a href="#"><i class="fas fa-circle-notch"></i></a></li>
+              <li><a href="#"><i class="fas fa-comment-alt"></i></a></li>
+              <li><a href="#"><i class="fas fa-ellipsis-v"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="notifications"></div>
+        <div class="search-chat"></div>
+        <div class="contact-list">
+          <ul>
+            <li>
+              <div class="contact">
+                <div class="img-contact">
+                  <img class="avatar" src="img\avatar_1.jpg" alt="avatar">
+                </div>
+                <div class="info-contact">
+                  <div class="contact-name">
+                    <h4>Samuele</h4>
+                    <span>11:30</span>
+                  </div>
+                  <p>non poteva essere altrimenti</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- /nav bar di sinistra -->
+      <!-- parte destra -->
+      <section class="text-area"></section>
+      <!-- /parte destra -->
+    </div>
 
 
-
-
-
-
-
-
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="script.js"></script>
   </body>
 </html>
