@@ -24,10 +24,18 @@
             </ul>
           </div>
         </div>
-        <div class="notifications"></div>
+        <div class="notifications">
+          <div class="notification-icon">
+            <i class="fa fa-bell-slash"></i>
+          </div>
+          <div class="notification-text">
+            <p>Ricevi notifiche di nuovi messaggi</p>
+            <a href="#" class="littlefont">Attiva notifiche desktop</a>
+          </div>
+        </div>
         <div class="search-chat">
           <label class="search-label">
-            <i class="fa fa-search"></i>
+            <i class="fa fa-search space"></i>
           </label>
           <input id="search" name="search" type="text" placeholder="Cerca o inizia una nuova chat">
         </div>
@@ -41,9 +49,9 @@
                 <div class="info-contact">
                   <div class="contact-name">
                     <h4 class="name">Michele</h4>
-                    <span>17:53</span>
+                    <span class="lastmessage-color">17:53</span>
                   </div>
-                  <p>non poteva essere altrimenti</p>
+                  <p class="lastmessage-color">non poteva essere altrimenti</p>
                 </div>
               </div>
               <div class="contact">
@@ -53,9 +61,9 @@
                 <div class="info-contact">
                   <div class="contact-name">
                     <h4 class="name">Fabio</h4>
-                    <span>17:53</span>
+                    <span class="lastmessage-color">17:53</span>
                   </div>
-                  <p>non poteva essere altrimenti</p>
+                  <p class="lastmessage-color">non poteva essere altrimenti</p>
                 </div>
               </div>
               <div class="contact">
@@ -65,9 +73,9 @@
                 <div class="info-contact">
                   <div class="contact-name">
                     <h4  class="name">Samuele</h4>
-                    <span>17:53</span>
+                    <span class="lastmessage-color">17:53</span>
                   </div>
-                  <p>non poteva essere altrimenti</p>
+                  <p class="lastmessage-color">non poteva essere altrimenti</p>
                 </div>
               </div>
               <div class="contact">
@@ -77,9 +85,9 @@
                 <div class="info-contact">
                   <div class="contact-name">
                     <h4 class="name">Alessandro B.</h4>
-                    <span>17:53</span>
+                    <span class="lastmessage-color">17:53</span>
                   </div>
-                  <p>non poteva essere altrimenti</p>
+                  <p class="lastmessage-color">non poteva essere altrimenti</p>
                 </div>
               </div>
               <div class="contact">
@@ -89,9 +97,9 @@
                 <div class="info-contact">
                   <div class="contact-name">
                     <h4 class="name">Alessandro L.</h4>
-                    <span>17:53</span>
+                    <span class="lastmessage-color">17:53</span>
                   </div>
-                  <p>non poteva essere altrimenti</p>
+                  <p class="lastmessage-color">non poteva essere altrimenti</p>
                 </div>
               </div>
               <div class="contact">
@@ -101,9 +109,9 @@
                 <div class="info-contact">
                   <div class="contact-name">
                     <h4 class="name">Claudia</h4>
-                    <span>17:53</span>
+                    <span class="lastmessage-color">17:53</span>
                   </div>
-                  <p>non poteva essere altrimenti</p>
+                  <p class="lastmessage-color">non poteva essere altrimenti</p>
                 </div>
               </div>
               <div class="contact">
@@ -113,9 +121,9 @@
                 <div class="info-contact">
                   <div class="contact-name">
                     <h4 class="name">Davide</h4>
-                    <span>17:53</span>
+                    <span class="lastmessage-color">17:53</span>
                   </div>
-                  <p>non poteva essere altrimenti</p>
+                  <p class="lastmessage-color">non poteva essere altrimenti</p>
                 </div>
               </div>
               <div class="contact">
@@ -125,9 +133,9 @@
                 <div class="info-contact">
                   <div class="contact-name">
                     <h4 class="name">Federico</h4>
-                    <span>17:53</span>
+                    <span class="lastmessage-color">17:53</span>
                   </div>
-                  <p>non poteva essere altrimenti</p>
+                  <p class="lastmessage-color">non poteva essere altrimenti</p>
                 </div>
               </div>
             </li>
@@ -136,6 +144,7 @@
       </nav>
       <!-- /nav bar di sinistra -->
       <!-- parte destra -->
+      <!-- chat -->
       <section class="text-area">
         <div class="header-nav">
           <div class="account-img">
@@ -159,7 +168,7 @@
          <div class="message-row">
            <div class="message">
              <div class="message-text">Come stai?</div>
-             <div class="message-time">11:05</div>
+             <div class="message-time lastmessage-color">11:05</div>
            </div>
          </div>
          <div class="message-row sent">
@@ -175,15 +184,17 @@
            </div>
          </div>
        </div>
+       <!-- /chat -->
        <!-- footer -->
-        <div class="footer-left">
-          <a href="#"><i class="far fa-smile icon-dimension"></i><a>
-          <input id="text" class="testo" type="text">
-          <a href="#"><i class="fas fa-paper-plane icon-dimension send-message"></i></a>
+        <div class="footer-right">
+          <a href="#"><i class="far fa-smile fa-2x icon-dimension"></i><a>
+          <input id="text" class="testo" type="text" placeholder="scrivi un messaggio">
+          <a href="#"><i class="fas fa-paper-plane fa-2x icon-dimension send-message"></i></a>
         </div>
         <!-- /footer -->
       </section>
       <!-- /parte destra -->
+      <!-- templates -->
       <div class="templates">
         <div class="message-row">
           <div class="message">

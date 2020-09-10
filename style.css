@@ -48,13 +48,50 @@ body{
 a{
   text-decoration: none;
 }
-.notifications{
-  height: 60px;
-  background-color: #8edafc;
+/* notifiche */
+
+.notifications {
+  display: flex;
+  align-items: center;
+  background-color: lightblue;
+  padding-left: 10px;
+  height: 70px;
+}
+.notification-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: lightblue;
+  background-color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+}
+.notification-text {
+  margin-left: 15px;
+}
+.littlefont{
+  font-size: 14px;
+  text-decoration: underline;
+  color:grey;
+}
+/* cercachat */
+
+.space{
+  margin-left: 10px;
+  color: lightgrey;
 }
 .search-chat{
   height: 40px;
-  background-color: lightgreen;
+  background-color:#fff;
+}
+#search{
+  height:30px;
+  width:90%;
+  margin-top: 5px;
+  margin-left: 10px;
+  border-radius: 2px;
+  border-color: lightgrey;
 }
 .contact-list{
   height: calc(100% - 150px);
@@ -87,42 +124,23 @@ img.avatar{
   padding: 5px;
   border-radius: 50%;
 }
-/* sezione di destra */
+.lastmessage-color{
+  color: grey
+}
+/* right-nav */
+
 .text-area{
   width: 65%;
   background-color: #fff;
 }
 .main-right{
-  height: calc(100% - 120px);
-}
-.footer-left{
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  }
-
-.testo{
-  height:50px;
-  width: 399px;
-  border-radius:5px;
-  border-color: lightgrey;
-}
-.icon-dimension{
-  width: 50px;
-  margin:10px;
-  }
-  .fa-microphone{
-    margin-left: 21px;
-  }
-.main-right{
-  background-color: grey;
+  background-image: url(img/mine.jpg);
   height: calc(100% - 140px);
   padding: 50px;
   overflow-y: scroll;
 }
+/* sezione chat */
 
-/* message */
 .message-row {
   display: flex;
   margin: 10px 0;
@@ -140,13 +158,30 @@ img.avatar{
   bottom: 3px;
   right: 3px;
 }
-
 .message-row.sent {
   justify-content: flex-end;
 }
 .message-row.sent .message {
   background-color: lightgreen;
 }
-/* /message */
+/* footer */
 
-/* /chat */
+.footer-right{
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.testo{
+  height:35px;
+  width: 500px;
+  border-radius:5px;
+  border-color: lightgrey;
+}
+.icon-dimension{
+  width: 50px;
+  margin:10px;
+}
+.fa-microphone{
+  margin-left: 21px;
+}
