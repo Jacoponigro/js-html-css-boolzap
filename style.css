@@ -95,3 +95,58 @@ img.avatar{
 .main-right{
   height: calc(100% - 120px);
 }
+.footer-left{
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+.testo{
+  height:50px;
+  width: 399px;
+  border-radius:5px;
+  border-color: lightgrey;
+}
+.icon-dimension{
+  width: 50px;
+  margin:10px;
+  }
+  .fa-microphone{
+    margin-left: 21px;
+  }
+.main-right{
+  background-color: grey;
+  height: calc(100% - 140px);
+  padding: 50px;
+  overflow-y: scroll;
+}
+
+/* message */
+.message-row {
+  display: flex;
+  margin: 10px 0;
+}
+.message {
+  position: relative;
+  background-color: white;
+  max-width: 350px;
+  border-radius: 10px;
+  padding: 15px;
+}
+.message-time {
+  position: absolute;
+  font-size: 13px;
+  bottom: 3px;
+  right: 3px;
+}
+
+.message-row.sent {
+  justify-content: flex-end;
+}
+.message-row.sent .message {
+  background-color: lightgreen;
+}
+/* /message */
+
+/* /chat */
