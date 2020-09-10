@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+// invio messaggi
   $(".send-message").click(
     function() {
       sendMessage();
@@ -13,7 +13,22 @@ $(document).ready(function() {
       }
     }
   );
-
+  $("#search").keyup(
+     function() {
+       var searchInput = $(this).val();
+       searchInput = searchInput.toLowerCase();
+       var contactsName = $(".contact .name");
+       contactsName.each(function() {
+         var name = $(this).text();
+         name = name.toLowerCase();
+         if(name.includes(searchInput) == true) {
+           $(this).parents(".contact").show();
+         } else {
+           $(this).parents(".contact").hide();
+         }
+       });
+    }
+   );
 });
 
 function sendMessage() {
@@ -26,7 +41,9 @@ function sendMessage() {
     var hours = date.getHours();
     var minutes = date.getMinutes();
     var time = hours + ":" + minutes;
-
+     if (minutes < 10) {
+       minutes = "0" + minutes;
+     }
     templateMessage.find(".message-text").text(inputText);
     templateMessage.find(".message-time").text(time);
     templateMessage.addClass("sent");
@@ -35,3 +52,4 @@ function sendMessage() {
     $("#texy").val("");
   }
 }
+// ricerca contatti
