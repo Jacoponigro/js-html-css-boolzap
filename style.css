@@ -107,6 +107,10 @@ a{
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
   background-color: #fff;
+  cursor: pointer;
+}
+.contact.active{
+  background-color: lightgrey;
 }
 .info-contact {
   display: flex;
@@ -195,6 +199,12 @@ img.avatar{
 .message:hover #angle-none{
   display: block;
   cursor: pointer;
+}
+.chat.active{
+  display: block;
+}
+.chat{
+  display: none;
 }
 /* footer */
 

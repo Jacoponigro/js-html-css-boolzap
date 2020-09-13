@@ -46,6 +46,18 @@ function(){
   $(this).parents(".message-row").remove()
 }
 );
+// clicca contatto apri chat
+$(".contact").click(
+  function(){
+  $(".contact").removeClass("active");
+  $(this).addClass("active");
+  var contatto = $(this).attr("data-contatto");
+  $(".chat").removeClass("active");
+  $(".chat[data-conversazione ="  + contatto + "]").addClass("active");
+  }
+);
+
+
 
 // funzione manda messaggi
 function sendMessage() {
@@ -65,8 +77,8 @@ function sendMessage() {
     templateMessage.find(".message-time").text(time);
     templateMessage.addClass("sent");
 
-    $(".main-right").append(templateMessage);
-    $("#texy").val("");
+    $(".chat.active").append(templateMessage);
+    $("#text").val("");
   }
 }
 // ricerca contatti
