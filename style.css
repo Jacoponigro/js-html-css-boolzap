@@ -135,7 +135,7 @@ img.avatar{
 }
 .main-right{
   background-image: url(img/mine.jpg);
-  height: calc(100% - 140px);
+  height: calc(100% - 120px);
   padding: 50px;
   overflow-y: scroll;
 }
@@ -164,6 +164,38 @@ img.avatar{
 .message-row.sent .message {
   background-color: lightgreen;
 }
+.angle-down{
+  position: absolute;
+  bottom: 20px;
+  right: 3px;
+  color: lightgrey;
+}
+#angle-none{
+  display: none;
+}
+.sub-list{
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  box-shadow: 2px 1px 9px;
+  background: white;
+  text-align: center;
+  padding:10px;
+  width: 150px;
+  white-space:nowrap;
+  display: none;
+  z-index: 1;
+}
+.sub-list a{
+  padding:7px;
+  color: black;
+}
+.message:hover #angle-none{
+  display: block;
+  cursor: pointer;
+}
 /* footer */
 
 .footer-right{
@@ -174,14 +206,19 @@ img.avatar{
 }
 .testo{
   height:35px;
-  width: 500px;
+  width: 600px;
   border-radius:5px;
   border-color: lightgrey;
 }
 .icon-dimension{
   width: 50px;
   margin:10px;
+  color: grey
 }
 .fa-microphone{
   margin-left: 21px;
+}
+/* templates */
+.templates{
+  display: none;
 }

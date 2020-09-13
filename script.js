@@ -1,5 +1,6 @@
 $(document).ready(function() {
-// invio messaggi
+// invio messaggi evento
+
   $(".send-message").click(
     function() {
       sendMessage();
@@ -13,6 +14,8 @@ $(document).ready(function() {
       }
     }
   );
+  // ricerca
+
   $("#search").keyup(
      function() {
        var searchInput = $(this).val();
@@ -31,6 +34,20 @@ $(document).ready(function() {
    );
 });
 
+// mostra menù a tendina
+$(document).on("click", "#angle-none",
+  function(){
+    $(this).siblings(".sub-list").toggle()
+  }
+);
+// cancella messaggio
+$(document).on("click", ".sub-list",
+function(){
+  $(this).parents(".message-row").remove()
+}
+);
+
+// funzione manda messaggi
 function sendMessage() {
   var inputText = $("#text").val();
 
